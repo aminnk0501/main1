@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+     font-family: 'Ubuntu', sans-serif; 
+}
+body {
+    position: relative;
+     background-color:#d8E3E5; 
+     
+  }
+.navbar .navbar-nav .nav-link{
+color:rgb(11, 12, 12);
+font-size: 14px;
+font-weight: 600;
+margin-right: 22px;
+}
+/* .arrow::after{
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+   */
+
+
+#heroid{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+}
+#heroid2{
+  border-radius: 50%;
+}
+#herodiv{
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+#herodiv:first-of-type {    /* For increasing performance 
+  ID/Class should've been used. 
+  For a small demo 
+  it's okaish for now */
+animation: showup 5s infinite;
+}
+#herodiv:last-of-type {
+  width:0px;
+  animation: reveal 5s infinite;
+}
+#herodiv:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 5s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:.5;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-100px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+.navbar-brand{
+font-weight: 700;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(234, 234, 239), 0 0 5px rgb(230, 230, 239);
+}
+#hero{
+background:url("img/mid.jpg");
+background-attachment: fixed;
+background-size: cover;
+height:100vh;
+background-position: center;
+z-index: -1;
+
+}
+.navbar .navbar-nav .nav-link:hover{
+background:  rgba(136, 212, 234, 0.4);
+color: black;
+border-radius: 9px;
+
+}
+.navbar .navbar-nav .nav-link.active{
+  background:  rgba(136, 212, 234, 0.4);
+color: black;
+border-radius: 9px;
+ }
+.navbar:hover{
+  background:rgba(47, 48, 48, 0.4);
+}
+.navbar .navbar-brand:hover{
+  color: white;
+}
+
+#gallery1{
+display: flex; 
+margin-bottom: 10px;
+
+}
+#gallery1 li{
+  list-style: none; 
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+}
+#gallery1 li:hover{
+  background: #03a9f4;
+  color: #fff;
+
+}
+#gallery1 li.active{
+  background: #03a9f4;
+  color: #fff;
+}
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.images .img{
+position: relative;
+width: 300px;
+height: 300px;
+margin: 4px;
+
+}
+.images .img img{
+  position: absolute;
+  top:0%;
+  left: 0%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+
+#aboutimg{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.foot{
+  text-decoration: none;
+}
+
+.card-body{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#contactimage{
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+padding: 10px;
+border:none}
+.card-text{
+  font-family: 'Edu TAS Beginner', cursive;
+
+}
+.footerr{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
